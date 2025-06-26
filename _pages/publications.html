@@ -12,25 +12,61 @@ author_profile: true
 {% include base_path %}
 
 <!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+<ol>
+  <li>
+    <strong>Data Agent: A Holistic Architecture for Orchestrating Data+ AI Ecosystems</strong><br>
+    <ins>Zhaoyan Sun</ins>, Jiayi Wang, Xinyang Zhao, Jiachi Wang, Guoliang Li<br>
+    <em>IEEE Data Engineering Bulletin (2025).</em> In submission. 
+    [<a href="https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/DataAgent.pdf">paper</a>]
+  </li>
+  <li>
+    <strong>R-Bot: An LLM-based Query Rewrite System</strong><br>
+    <ins>Zhaoyan Sun</ins>, Xuanhe Zhou, Guoliang Li, Xiang Yu, Jianhua Feng, Yong Zhang<br>
+    <em>VLDB (2025).</em> 
+    [<a href="https://arxiv.org/pdf/2412.01661">paper</a>]
+    [<a href="https://github.com/curtis-sun/LLM4Rewrite">code</a>]
+  </li>
+  <li>
+    <strong>D-Bot: An LLM-Powered DBA Copilot</strong><br>
+    <ins>Zhaoyan Sun</ins>, Xuanhe Zhou, Jianming Wu, Wei Zhou, Guoliang Li<br>
+    <em>SIGMOD Demo (2025).</em> 
+    [<a href="https://dl.acm.org/doi/abs/10.1145/3722212.3725091">paper</a>]
+    [<a href="https://github.com/TsinghuaDatabaseGroup/DB-GPT">code</a>]
+  </li>
+  <li>
+    <strong>D-bot: Database diagnosis system using large language models</strong><br>
+    Xuanhe Zhou, Guoliang Li, <ins>Zhaoyan Sun</ins>, Zhiyuan Liu, Weize Chen, Jianming Wu, Jiesi Liu, Ruohang Feng, Guoyang Zeng<br>
+    <em>VLDB (2024).</em> 
+    [<a href="https://www.vldb.org/pvldb/vol17/p2514-li.pdf">paper</a>]
+    [<a href="https://github.com/TsinghuaDatabaseGroup/DB-GPT">code (0.6k stars)</a>]<br>
+    <span style="color:red;">BenchCouncil Top-100 Open Source Achievement</span>
+  </li>
+  <li>
+    <strong>Db-gpt: Large language model meets database</strong><br>
+    Xuanhe Zhou, <ins>Zhaoyan Sun</ins>, Guoliang Li<br>
+    <em>Data Science and Engineering (2024).</em> 
+    [<a href="https://link.springer.com/article/10.1007/s41019-023-00235-6">paper</a>]
+    [<a href="https://github.com/TsinghuaDatabaseGroup/DB-GPT">code</a>]
+  </li>
+  <li>
+    <strong>A learned query rewrite system</strong><br>
+    Xuanhe Zhou, Guoliang Li, Jianming Wu, Jiesi Liu, <ins>Zhaoyan Sun</ins>, Xinning Zhang<br>
+    <em>VLDB Demo (2023).</em> 
+    [<a href="https://www.vldb.org/pvldb/vol16/p4110-li.pdf">paper</a>]
+    [<a href="https://github.com/XuanheZhou/LearnedRewrite">code</a>]
+  </li>
+  <li>
+    <strong>Learned Index: A Comprehensive Experimental Evaluation</strong><br>
+    <ins>Zhaoyan Sun</ins>, Xuanhe Zhou, Guoliang Li<br>
+    <em>VLDB (2023).</em> 
+    [<a href="https://www.vldb.org/pvldb/vol16/p1992-li.pdf">paper</a>]
+    [<a href="https://github.com/curtis-sun/TLI">code</a>]
+  </li>
+  <li>
+    <strong>Learned cardinality estimation: A design space exploration and a comparative evaluation</strong><br>
+    Ji Sun, Jintao Zhang, <ins>Zhaoyan Sun</ins>, Guoliang Li, Nan Tang<br>
+    <em>VLDB (2021).</em> 
+    [<a href="https://dl.acm.org/doi/abs/10.14778/3485450.3485459">paper</a>]
+    [<a href="https://github.com/jt-zhang/CardinalityEstimationTestbed">code</a>]
+  </li>
+</ol>
