@@ -51,6 +51,9 @@ My research focuses on autonomous database systems and intelligent data analytic
   </li>
 </ol>
 
+## Selected Awards
+* 2022 - Excellent Graduate of Tsinghua University (top 5%)
+
 ## Education
 * Aug. 2022 - now, Ph.D, Dept. of Computer Science and Technology, Tsinghua University, Bejing, China
 * Aug. 2018 - Jul. 2022, Undergraduate, Dept. of Computer Science and Technology, Tsinghua University, Bejing, China
